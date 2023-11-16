@@ -1,34 +1,74 @@
+/* home.css */
+
 .home-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2등분 */
-  grid-template-rows: 1fr 2fr; /* 3등분 */
-  height: 100vh; /* 화면 전체 높이를 채우도록 설정 */
+  grid-template-areas:
+    'top-left top-right'
+    'bottom bottom';
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  height: 100vh;
+  padding: 20px;
+  background-color: #F5F5F5;
+}
 
-  .top-left, .top-right, .bottom {
-    border: 1px solid #ccc; /* 각 섹션에 테두리 추가 */
-    overflow: hidden; /* 내용이 넘칠 경우를 대비해서 오버플로우를 숨김 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.top-left {
+  grid-area: top-left;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 이미지와 텍스트를 세로로 가운데 정렬 */
+  justify-content: center;
+  text-align: center;
+  color: #557656;
+  text-align: center; /* 버튼 내 텍스트를 중앙 정렬 */
+  font-weight: bold; /* 글씨를 bold체로 설정 */
+}
 
-  .top-left img, .top-right img {
-    max-width: 100%; /* 이미지가 섹션을 넘어가지 않도록 */
-    max-height: 100%;
-  }
+.shannti { 
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
+}
+.top-right img {
+  max-width: 500px;
+  max-height: 300px;
+  width: 100%;
+  margin-top: 50px;
+  height: auto;
+}
 
-  .bottom {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3등분 */
-    grid-gap: 10px; /* 각 버튼 사이의 간격 */
-    justify-content: center;
-    align-items: center;
-  }
+.top-right {
+  grid-area: top-right;
+}
 
-  button {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    font-size: 16px;
-  }
+.bottom {
+  grid-area: bottom;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: #D3D4D6;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b6be86;
+  padding: 30px 80px; /* 크기를 조정 */
+  border-radius: 8px;
+  color: #557656;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: center; /* 버튼 내 텍스트를 중앙 정렬 */
+  font-weight: bold; /* 글씨를 bold체로 설정 */
+}
+
+button img {
+  margin-bottom: 10px; /* 이미지 아래에 여백 추가 */
+  width: 150px;
+  height: 100px;
 }

@@ -24,7 +24,7 @@ export default function Face() {
       a.download = 'captured_image.png';
       a.click();
 
-      navigateToSignup();
+      navigateToSignup()
     }, 5000);
 
     return () => {

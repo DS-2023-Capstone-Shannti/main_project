@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // useNavigate를 추가
 import ProgressBar from "./ProgressBar.js";
-import './index.css';
+import './login.css';
 
 const User = {
   email: 'test@gmail.com',

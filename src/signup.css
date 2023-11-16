@@ -1,4 +1,6 @@
-/* signup.css */
+.page {
+  background-color: #F5F5F5;
+}
 
 .signup-container {
   display: flex;
@@ -34,18 +36,21 @@ p {
   color: #557656;
   margin-bottom: 16px;
   cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .right-half {
   flex: 1;
-  background-color: #d3d3d3; /* Set background color for the right-half */
+  background-color: #d3d3d3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .webcam-container {
-  position: relative; /* Add position relative to the webcam container */
+  position: relative;
 }
 
 .webcam-background {
@@ -54,8 +59,8 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #d3d3d3; /* Set background color for the webcam area */
-  z-index: -1; /* Set z-index to -1 to place it behind the webcam */
+  background-color: #d3d3d3;
+  z-index: -1;
 }
 
 h2 {

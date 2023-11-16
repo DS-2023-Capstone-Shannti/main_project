@@ -10,22 +10,26 @@ export default function Home() {
   return (
     <div className="home-container">
       <div className="top-left">
-        <img src="./shannti.png" alt="shannti" />
+        <img className = "shannti" src="./roundshannti.png" alt="shannti" />
+        SHANNTI<br></br>
+        마음의 평화<br></br>
+        "운동을 통해 몸과<br></br>
+        마음의 평화를 얻자"<br></br>
       </div>
       <div className="top-right">
         <img src="./exercise.jpg" alt="Exercise Log" />
       </div>
       <div className="bottom">
         <button onClick={() => handleButtonClick('Button 1')}>
-          <img src="버튼1 이미지 경로" alt="Button 1" />
+          <img src="./pose.png" alt="Button 1" />
           자세교정운동
         </button>
         <button onClick={() => handleButtonClick('Button 2')}>
-          <img src="버튼2 이미지 경로" alt="Button 2" />
+          <img src="./bottle.png" alt="Button 2" />
           사물인식운동
         </button>
         <button onClick={() => handleButtonClick('Button 3')}>
-          <img src="버튼3 이미지 경로" alt="Button 3" />
+          <img src="./game.png" alt="Button 3" />
           유산소운동
         </button>
       </div>
