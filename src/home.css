@@ -8,7 +8,7 @@
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
   gap: 20px;
-  height: 100vh;
+  height: auto;
   padding: 20px;
   background-color: #F5F5F5;
 }
@@ -31,16 +31,15 @@
   width: 100%;
   height: auto;
 }
-.top-right img {
-  max-width: 500px;
-  max-height: 300px;
-  width: 100%;
-  margin-top: 50px;
-  height: auto;
-}
 
 .top-right {
   grid-area: top-right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #557656;
+  font-size: 50px;
+  font-weight: bold; /* 글씨를 bold체로 설정 */
 }
 
 .bottom {
@@ -49,6 +48,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  width:100%;
   background-color: #D3D4D6;
 }
 
@@ -57,6 +57,8 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: #b6be86;
   padding: 30px 80px; /* 크기를 조정 */
   border-radius: 8px;

@@ -39,6 +39,8 @@ p {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: 200px;
 }
 
 .right-half {
