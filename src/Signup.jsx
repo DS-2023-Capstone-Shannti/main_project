@@ -53,6 +53,7 @@ export default function Signup() {
             mirrored={true}
           />
           <h2>얼굴을 인식해주세요.</h2>
+          <div className="center-line"></div>
         </div>
       </div>
     </div>

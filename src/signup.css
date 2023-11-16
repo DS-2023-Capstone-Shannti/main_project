@@ -43,9 +43,17 @@ p {
   margin-left: 200px;
 }
 
+.right-half::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 4px solid #557656; /* 원하는 실선 색상 및 굵기로 설정 */
+}
+
 .right-half {
   flex: 1;
-  background-color: #d3d3d3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +69,6 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #d3d3d3;
   z-index: -1;
 }
 
